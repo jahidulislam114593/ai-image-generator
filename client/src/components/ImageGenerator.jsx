@@ -44,7 +44,6 @@ const ImageGenerator = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="bg-white p-6 rounded-md flex w-10/12 h-3/4">
-        {/* Left side - Text Area */}
         <div className="flex-1 p-4">
           <div className="text-and-cat flex items-center space-x-4">
             <h2 className="text-xl font-bold mb-4">Enter Your Prompt</h2>
@@ -65,11 +64,9 @@ const ImageGenerator = () => {
           </button>
         </div>
 
-        {/* Right side - Image Display */}
         <div className="flex-1 p-4">
           <h2 className="text-xl font-bold mb-4">Generated Image</h2>
           <div className="flex justify-center items-center w-full h-full border-2 border-gray-300 rounded-md overflow-hidden">
-            {/* Conditional rendering: show loading or generated image */}
             <img
               src={image ? image : img1}
               alt="Generated"
